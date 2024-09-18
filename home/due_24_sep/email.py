@@ -14,7 +14,7 @@ def writeToFile(fileName, email):
 yearOfEntry = int(input('Please enter the year you joined RGS: '))
 forename = str(input('Please enter your first name: '))
 surname = str(input('Please enter your last name: '))
-fileName = 'data.txt'
+fileName = 'home/due_24_sep/data.txt'
 email = generateEmail(fileName, yearOfEntry, forename, surname)
 
 # output result
