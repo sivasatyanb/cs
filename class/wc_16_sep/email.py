@@ -1,4 +1,4 @@
-# The easy way:
+# # The easy way:
 
 # from email_validator import validate_email, EmailNotValidError
 
