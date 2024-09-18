@@ -1,6 +1,6 @@
 # function to generate email based on user details
 def generateEmail(fileName, yearOfEntry, forename, surname):
-    email = yearOfEntry[-2:] + surname[:4] + forename[:3] + '@rgshw.com'
+    email = str(yearOfEntry)[-2:] + surname[:4] + forename[:3] + '@rgshw.com'
     writeToFile(fileName, email)
     return email
 
