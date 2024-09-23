@@ -37,3 +37,10 @@ elif inp1 == 'pop':
     # error detection :)
     else:
         print('This stack is already empty')
+
+# other stack code:
+stack = [1, 2, 3]
+print(stack.pop())
+stack.append(4)
+print(stack)
+print(stack[-1])
