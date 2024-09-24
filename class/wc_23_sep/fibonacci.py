@@ -9,7 +9,7 @@ def fibonacci(n):
         return (fibonacci(n - 1) + fibonacci(n - 2))
 
 # get user input and print function output
-n = int(input('Enter a number of terms from the Fibonacci sequence: '))
-print(f'The Fibonacci sequence for the first {n} terms are:', end = ' ')
+n = int(input('Enter a number of terms from the fibonacci sequence: '))
+print(f'The fibonacci sequence for the first {n} terms are:', end = ' ')
 for i in range(n):
     print(f'{fibonacci(i)}', end = ' ')
