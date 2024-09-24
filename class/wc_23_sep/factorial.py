@@ -6,6 +6,12 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n - 1)
+    
+    # # alternative using iteration:
+    # result = 1
+    # for i in range(n):
+    #     result *= i
+    # return result
 
 n = int(input('Enter a number: '))
 print(f'{n} factorial is {factorial(n)}')
