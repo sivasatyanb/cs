@@ -7,7 +7,7 @@ import numpy as np
 import random
 
 # initialise main varaibles
-stack = [random.randint(1, 10), random.randint(1, 10)]
+stack = [np.random.randint(1, 10), np.andom.randint(1, 10)]
 pointer = 1
 inp1 = input('Please choose to add to the stack or remove from the stack: ')
 
