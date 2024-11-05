@@ -1,4 +1,3 @@
-with open('home/playground/data.txt', 'r') as f:
-    # f.write('siva :)' +'\n')
-    print(f.read())
-f.close()
+with open('home/playground/data.txt', 'a') as f:
+    f.write('test')
+
