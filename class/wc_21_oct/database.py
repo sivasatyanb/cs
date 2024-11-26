@@ -41,7 +41,7 @@ def orderByAge():
         cursor.execute('''
                        SELECT Forename, Surname, DOB
                        FROM ArrayDaLads
-                       WHERE (DOB BETWEEN '2006-09-01' AND '2007-01-15') AND NOT Forename = 'Forename'
+                       WHERE (DOB BETWEEN '2006-09-01' AND '2007-01-01') AND NOT Forename = 'Forename'
                        ORDER BY DOB ASC;
                        ''')
         students = cursor.fetchall()
