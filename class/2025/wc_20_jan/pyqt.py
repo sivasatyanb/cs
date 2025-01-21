@@ -29,7 +29,7 @@ class WindowClass(QtWidgets.QMainWindow, window1):
                 myMessage="please enter something"
             self.lblOutput.setText(myMessage);self.txtInput.setText(" ")
 
-app=QtWidgets.QApplication(sys.argv)
+app=QtWidgets.QApplication(sys.argv)  
 w1=WindowClass(None)
 w1.show()
 app.exec_()
