@@ -15,19 +15,19 @@ class WindowClass(QtWidgets.QMainWindow, window1):
             self.lblOutput.setVisible(True)
             self.btnOk.clicked.connect(self.sayit)
             self.radio1.setChecked(True)
+            self.spinBox.setVisible(True)
         def sayit(self):
             myMessage=self.txtInput.text()
-            if len(myMessage)>0:
-                value = float(myMessage)
-                if self.radio1.isChecked() == True:
-                    result = value*1.61
-                    myMessage ='the value in miles is: ' + str(result)
-                elif self.radio2.isChecked() == True:
-                    result = value/1.61
-                    myMessage ='the value in miles is: ' + str(result)
+            if self.radio1.isChecked() == True:
+                myMessage = 'gender is boy'
+            elif self.radio2.isChecked() == True:
+                myMessage = 'gender is girl'
+            elif self.radio3.isChecked() == True:
+                myMessage = 'gender is washing machine'
             else:
-                myMessage="please enter something"
-            self.lblOutput.setText(myMessage);self.txtInput.setText(" ")
+                myMessage='please enter something'
+            self.lblOutput.setText(myMessage)
+            self.txtInput.setText(" ")
 
 app=QtWidgets.QApplication(sys.argv)  
 w1=WindowClass(None)
