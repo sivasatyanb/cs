@@ -37,6 +37,16 @@
      <string>TextLabel</string>
     </property>
    </widget>
+   <widget class="QTableView" name="tblNames">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>160</y>
+      <width>401</width>
+      <height>361</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
